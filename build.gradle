@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.10.0'
     implementation group: 'org.testng', name: 'testng', version: '7.3.0'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation group: 'com.google.guava', name: 'guava', version: '30.1-jre'
