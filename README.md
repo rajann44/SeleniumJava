@@ -1,6 +1,7 @@
 
 
 ## Features
+- Add performance testing capabilities
 - Implement mobile testing support
 - Add API testing capabilities
 - Implement cross-browser testing support
