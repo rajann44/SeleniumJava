@@ -1,6 +1,7 @@
 
 
 ## Features
+- Add WebDriverManager for browser management
 - Implement Page Object Model
 - Implement CI/CD pipeline integration
 - Add test data management system
