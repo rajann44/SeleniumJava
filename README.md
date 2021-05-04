@@ -1,6 +1,7 @@
 
 
 ## Features
+- Add API testing capabilities
 - Implement cross-browser testing support
 - Add logging mechanism using Log4j
 - Implement data-driven testing framework
