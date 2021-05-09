@@ -16,7 +16,6 @@ public class VerifySignUp {
         signupPage.navigateToTheURL("https://google.com");
         signupPage.sleepFor(5);
         signupPage.refreshBrowser();
-        signupPage.sleepFor(5);
 
     }
 
