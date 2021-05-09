@@ -1,0 +1,18 @@
+uiElements/pages/BasePage.java
+ uiElements.pages.BasePage
+uiElements/locators/GenericPageLocator.java
+ uiElements.locators.GenericPageLocator
+config/PropertiesFile.java
+ config.PropertiesFile
+uiElements/pages/GenericPage.java
+ uiElements.pages.GenericPage
+uiElements/pages/SignupPage.java
+ uiElements.pages.SignupPage
+utils/TestListeners.java
+ utils.TestListeners
+utils/WebDriverManager.java
+ utils.WebDriverManager
+uiElements/locators/SignupPageLocator.java
+ uiElements.locators.SignupPageLocator
+utils/ExtentReportManager.java
+ utils.ExtentReportManager
