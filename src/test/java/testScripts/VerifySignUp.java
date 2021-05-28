@@ -13,7 +13,7 @@ public class VerifySignUp {
     @Test
     public void justBrowser(){
 
-        signupPage.navigateToTheURL("https://google.com");
+        signupPage.navigateToTheURL("https://google.com/Test");
         signupPage.sleepFor(5);
         signupPage.refreshBrowser();
 
