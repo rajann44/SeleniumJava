@@ -11,4 +11,8 @@ public class GenericPageLocator extends BasePage {
     @FindBy(how= How.XPATH, using = "//input[@id='email']")
     public WebElement workEmail;
 
+    //Work Email Locator on signup page
+    @FindBy(how= How.XPATH, using = "//input[@id='email']")
+    public WebElement workEmail;
+
 }
