@@ -14,14 +14,7 @@ public class VerifySignUp {
     public void justBrowser(){
 
         signupPage.navigateToTheURL("https://google.com/");
-        signupPage.navigateToTheURL("https://amazon.com");
-<<<<<<< HEAD
-=======
         signupPage.navigateToTheURL("https://amazon.in/");
-        signupPage.navigateToTheURL("https://amazon.com");
-        signupPage.navigateToTheURL("https://amazon.com");
-        signupPage.navigateToTheURL("https://amazon.in/");
->>>>>>> master
         signupPage.sleepFor(5);
         signupPage.refreshBrowser();
 
