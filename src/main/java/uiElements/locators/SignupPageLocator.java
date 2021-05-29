@@ -10,4 +10,8 @@ public class SignupPageLocator extends GenericPageLocator {
     @FindBy(how= How.XPATH, using = "//input[@title='Search']")
     public WebElement fullNameOnSignupPage;
 
+    //Full Name Locator on signup page
+    @FindBy(how= How.XPATH, using = "//input[@title='Search']")
+    public WebElement fullNameOnSignupPag2;
+
 }
