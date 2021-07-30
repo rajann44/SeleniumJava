@@ -1,6 +1,7 @@
 
 
 ## Features
+- Add test data management system
 - Implement BDD with Cucumber
 - Add performance testing capabilities
 - Implement mobile testing support
