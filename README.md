@@ -1,6 +1,7 @@
 
 
 ## Features
+- Implement BDD with Cucumber
 - Add performance testing capabilities
 - Implement mobile testing support
 - Add API testing capabilities
