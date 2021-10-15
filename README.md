@@ -1,6 +1,7 @@
 
 
 ## Features
+- Implement Page Object Model
 - Implement CI/CD pipeline integration
 - Add test data management system
 - Implement BDD with Cucumber
