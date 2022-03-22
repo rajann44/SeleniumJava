@@ -24,3 +24,8 @@ jobs:
       run: chmod +x gradlew # give permission to Gradle to run the commands
     - name: Build with Gradle
       run: ./gradlew test --info # Run our tests using Gradle
+    - name: Deploy Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: ./reports
