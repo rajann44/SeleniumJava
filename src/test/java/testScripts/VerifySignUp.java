@@ -18,6 +18,7 @@ public class VerifySignUp {
         signupPage.navigateToTheURL("https://google.com/");
         signupPage.navigateToTheURL("https://google.com/");
         signupPage.navigateToTheURL("https://google.com/");
+        signupPage.navigateToTheURL("https://google.com/");
         Assert.assertTrue(true);
         signupPage.refreshBrowser();
 
