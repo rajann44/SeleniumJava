@@ -52,7 +52,7 @@ public class TestListeners implements ITestListener {
         if(extent!=null){
             extent.flush();
         }
-        WebDriverManager.closeBrowser();//This will close browser instance after completion
+        WebDriverController.closeBrowser();//This will close browser instance after completion
     }
 
 }

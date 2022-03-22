@@ -11,11 +11,12 @@ repositories {
 
 dependencies {
     compile group: 'org.testng', name: 'testng', version: '7.3.0'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation(group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59')
     compile group: 'com.google.guava', name: 'guava', version: '30.1-jre'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
     compile group: 'com.aventstack', name: 'extentreports', version: '4.1.7'
     compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.1.0'
 }
 
 test {

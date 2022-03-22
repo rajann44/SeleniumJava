@@ -1,7 +1,7 @@
 package config;
 
 import uiElements.pages.BasePage;
-import utils.WebDriverManager;
+import utils.WebDriverController;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -15,8 +15,8 @@ public class PropertiesFile {
             InputStream inputStream = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/config/config.properties");
             prop.load(inputStream);
             BasePage.explicitWaitTime = prop.getProperty("explicitWait");
-            WebDriverManager.browser = prop.getProperty("browser");
-            WebDriverManager.implicitWaitTime = prop.getProperty("implicitWait");
+            WebDriverController.browser = prop.getProperty("browser");
+            WebDriverController.implicitWaitTime = prop.getProperty("implicitWait");
         } catch (Exception e) {
             e.printStackTrace();
         }

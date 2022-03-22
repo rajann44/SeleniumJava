@@ -25,7 +25,7 @@ public class ExtentReportManager {
 
         extent = new ExtentReports();
         extent.setSystemInfo("Test Run By:","Rajan Chaudhary");
-        extent.setSystemInfo("Browser",WebDriverManager.browser.toUpperCase(Locale.ROOT));
+        extent.setSystemInfo("Browser", WebDriverController.browser.toUpperCase(Locale.ROOT));
         extent.attachReporter(htmlReporter);
 
         return extent;

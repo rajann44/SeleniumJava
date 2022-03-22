@@ -10,13 +10,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
-import utils.WebDriverManager;
+import utils.WebDriverController;
 
 public class BasePage {
 
     public static String explicitWaitTime;
-    protected WebDriver driver = WebDriverManager.getDriver();
-    protected Actions action = new Actions(driver);
+    protected WebDriver driver = WebDriverController.getDriver();
+    protected Actions action = new Actions(WebDriverController.getDriver());
     public JavascriptExecutor js = (JavascriptExecutor)driver;
     protected WebDriverWait wait = new WebDriverWait(driver, Long.parseLong(explicitWaitTime));
 
