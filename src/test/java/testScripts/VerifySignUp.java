@@ -14,6 +14,10 @@ public class VerifySignUp {
     public void justBrowser(){
 
         signupPage.navigateToTheURL("https://google.com/");
+        signupPage.navigateToTheURL("https://google.com/");
+        signupPage.navigateToTheURL("https://google.com/");
+        signupPage.navigateToTheURL("https://google.com/");
+        signupPage.navigateToTheURL("https://google.com/");
         signupPage.refreshBrowser();
 
     }

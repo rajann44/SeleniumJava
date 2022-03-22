@@ -4,6 +4,7 @@ import config.PropertiesFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
@@ -13,13 +14,16 @@ public class WebDriverController {
 
     protected static WebDriver driver;
     public static String browser, implicitWaitTime;
+    static ChromeOptions options = new ChromeOptions();
 
     public static WebDriver getDriver(){
         if(driver==null){
             PropertiesFile.readPropertiesFile();
         if(browser.equals("chrome")){
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--headless");
+            driver = WebDriverManager.chromedriver().capabilities(options).create();
         }
         if(browser.equals("firefox")){
             WebDriverManager.firefoxdriver().setup();
