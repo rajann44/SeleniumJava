@@ -21,7 +21,7 @@ public class ExtentReportManager {
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setDocumentTitle("Automation Report");
         htmlReporter.config().setReportName("Test Case Result");
-        htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setTheme(Theme.STANDARD);
 
         extent = new ExtentReports();
         extent.setSystemInfo("Test Run By:","Rajan Chaudhary");
@@ -32,9 +32,9 @@ public class ExtentReportManager {
     }
 
     public static String getReportName(){
-        Date d = new Date();
-        String fileName = "Report_" + d.toString().replace(":","_")
-                .replace(" ","_")+".html";
+        //Date d = new Date();
+        /*String fileName = "report_" + d.toString().replace(":","_").replace(" ","_")+".html";*/
+        String fileName = "index.html";
         return fileName;
     }
 
