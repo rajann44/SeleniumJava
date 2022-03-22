@@ -1,5 +1,6 @@
 package testScripts;
 
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import uiElements.pages.SignupPage;
@@ -18,6 +19,7 @@ public class VerifySignUp {
         signupPage.navigateToTheURL("https://google.com/");
         signupPage.navigateToTheURL("https://google.com/");
         signupPage.navigateToTheURL("https://google.com/");
+        Assert.assertTrue(false);
         signupPage.refreshBrowser();
 
     }
