@@ -1,6 +1,6 @@
 name: Selenium Java CI
 
-on: [push, pull_request_review]
+on: [push]
 
 jobs:
   build:
