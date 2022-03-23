@@ -14,7 +14,6 @@ jobs:
       with:
         status: ${{ job.status }}
         config: .github/config/slack.yml
-        channel: '#selenium_java_notification'
       if: always()
       
     - uses: actions/checkout@v2 # Checkout the code
@@ -44,5 +43,4 @@ jobs:
       with:
         status: ${{ job.status }}
         config: .github/config/slack.yml
-        channel: '#selenium_java_notification'
       if: always()
