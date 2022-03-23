@@ -42,10 +42,4 @@ public class VerifySignUp {
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 6)
-    public void navigation_06(){
-        signupPage.navigateToTheURL("https://www.aol.com/");
-        Assert.assertTrue(true);
-    }
-
 }
