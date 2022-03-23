@@ -12,8 +12,9 @@ jobs:
     steps:
     - uses: act10ns/slack@v1
       with:
-        status: ${{ job.status }}
+        status: starting
         config: .github/config/slack.yml
+        message: Deploying {{ env.GITHUB_REF_NAME }} branch....
         channel: '#selenium_java_notification'
       if: always()
       
@@ -43,6 +44,8 @@ jobs:
     - uses: act10ns/slack@v1
       with:
         status: ${{ job.status }}
+        steps: ${{ toJson(steps) }}
+        message: Deployment of {{ env.GITHUB_REF_NAME }} branch completed!!
         config: .github/config/slack.yml
         channel: '#selenium_java_notification'
       if: always()
