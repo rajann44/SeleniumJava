@@ -14,7 +14,7 @@ jobs:
       with:
         status: starting
         channel: '#selenium_java_notification'
-        message: Starting Build and Push...
+        message: Deployment of {{ env.GITHUB_REF_NAME }} started.....
       if: always()
       
     - uses: actions/checkout@v2 # Checkout the code
@@ -45,4 +45,5 @@ jobs:
         status: ${{ job.status }}
         steps: ${{ toJson(steps) }}
         channel: '#selenium_java_notification'
+        message: Deployment of {{ env.GITHUB_REF_NAME }} branch completed!
       if: always()
