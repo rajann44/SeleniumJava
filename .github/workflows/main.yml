@@ -13,8 +13,8 @@ jobs:
     - uses: act10ns/slack@v1
       with:
         status: starting
+        message: Deploying {{ env.GITHUB_REF##*/ }} branch. In Progress....
         channel: '#selenium_java_notification'
-        message: Starting Build and Push...
       if: always()
       
     - uses: actions/checkout@v2 # Checkout the code
@@ -44,5 +44,6 @@ jobs:
       with:
         status: ${{ job.status }}
         steps: ${{ toJson(steps) }}
+        message: Deployment for {{ env.GITHUB_REF##*/ }} branch completed.
         channel: '#selenium_java_notification'
       if: always()
