@@ -13,7 +13,7 @@ jobs:
     - uses: act10ns/slack@v1
       with:
         status: starting
-        message: Deploying {{ GITHUB_REF##*/ }} branch. In Progress....
+        message: Deploying {{ env.GITHUB_REF_NAME }} branch. In Progress....
         channel: '#selenium_java_notification'
       if: always()
       
@@ -44,6 +44,6 @@ jobs:
       with:
         status: ${{ job.status }}
         steps: ${{ toJson(steps) }}
-        message: Deployment for {{ GITHUB_REF##*/ }} branch completed.
+        message: Deployment for {{ env.GITHUB_REF_NAME }} branch completed.
         channel: '#selenium_java_notification'
       if: always()
