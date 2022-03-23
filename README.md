@@ -4,4 +4,9 @@
  - Use Code <code>gradle build</code>
  - <code>./gradlew clean test --info</code>
 
+Features:
+1. Github Action automated build trigger
+2. Slack notification: SeleniumJava/.github/workflows/main.yml
+https://github.com/act10ns/slack
+
 **Results:** https://rajann44.github.io/SeleniumJava
