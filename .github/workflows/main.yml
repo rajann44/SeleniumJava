@@ -10,7 +10,7 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
     steps:
-    - uses: act10ns/slack@v1
+    - uses: act10ns/slack@v1.5.0
       with:
         status: ${{ job.status }}
         config: .github/config/slack.yml
@@ -40,7 +40,7 @@ jobs:
         branch: gh-pages
         folder: ./reports
     
-    - uses: act10ns/slack@v1
+    - uses: act10ns/slack@v1.5.0
       with:
         status: ${{ job.status }}
         config: .github/config/slack.yml
