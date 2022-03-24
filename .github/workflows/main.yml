@@ -2,9 +2,6 @@ name: Selenium Java CI
 
 on:
   workflow_dispatch:
-    inputs:
-      environment:
-        default: main
   push:
   pull_request:
   schedule:
@@ -23,7 +20,7 @@ jobs:
       with:
         status: starting
         steps: ${{ toJson(steps) }}
-        message: Deploying {{ env.GITHUB_REF_NAME }} branch.....
+        message: Deploying {{ env.GITHUB_REF_NAME }} branch.....🏁
         channel: '#selenium_java_notification'
         #config: .github/config/slack.yml
       if: always()
@@ -55,7 +52,7 @@ jobs:
       with:
         status: ${{ job.status }}
         steps: ${{ toJson(steps) }}
-        message: Deployment of {{ env.GITHUB_REF_NAME }} branch Completed.....
+        message: Deployment of {{ env.GITHUB_REF_NAME }} branch Completed.....🎉
         channel: '#selenium_java_notification'
         #config: .github/config/slack.yml
       if: always()
