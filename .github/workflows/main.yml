@@ -4,9 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        type: string
         default: main
-        required: true
   push:
   pull_request:
   schedule:
