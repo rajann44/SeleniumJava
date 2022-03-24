@@ -42,7 +42,7 @@ public class VerifySignUp {
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void navigation_06(){
         signupPage.navigateToTheURL("https://duckduckgo.com/");
         Assert.assertTrue(true);
