@@ -1,9 +1,9 @@
 name: Selenium Java CI
 
 on:
+  workflow_dispatch:
   push:
   pull_request:
-  workflow_dispatch:
   schedule:
     # will run the job at 9:30 AM and 21:30 PM
     - cron: '30 9,21 * * *'
