@@ -12,7 +12,6 @@ public class SlackReporter {
         for (String str : failedTestList) {
             jsonString = jsonString + str + "\\n";
         }
-        System.out.println(jsonString);
     }
 
     public static String returnLongOP(){

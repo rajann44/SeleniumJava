@@ -55,8 +55,9 @@ public class TestListeners implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         SlackReporter.testResultOutput();//Called the method to make json string
+        System.out.println();
         try {
-            HttpHandler.makePostRequest("https://hooks.slack.com/services/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"
+            HttpHandler.makePostRequest(System.getenv("SLACK_WEBHOOK_URL")
                     ,"{\"text\":\""+"******Automation_Execution_Result******\\n"+ SlackReporter.returnLongOP()+"}");
         } catch (IOException e) {
             e.printStackTrace();
