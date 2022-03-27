@@ -17,6 +17,8 @@ dependencies {
     implementation group: 'com.aventstack', name: 'extentreports', version: '4.1.7'
     implementation group: 'commons-io', name: 'commons-io', version: '2.4'
     implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.1.0'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
 }
 
 test {
