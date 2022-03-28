@@ -33,13 +33,13 @@ public class VerifySearchEngines {
     @Test(priority = 4)
     public void navigation_06(){
         signupPage.navigateToTheURL("https://duckduckgo.com/");
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
     }
 
     @Test(priority = 5)
-    public void navigation_07_Fail1(){
+    public void navigation_07(){
         signupPage.navigateToTheURL("https://google.com/");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 
 }
