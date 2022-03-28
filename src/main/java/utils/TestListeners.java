@@ -6,13 +6,13 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.Reporter;
+import org.testng.*;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class TestListeners implements ITestListener {
 
@@ -54,14 +54,7 @@ public class TestListeners implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-        SlackReporter.testResultOutput();//Called the method to make json string
-        System.out.println();
-        try {
-            HttpHandler.makePostRequest(System.getenv("SLACK_WEBHOOK_URL")
-                    ,"{\"text\":\""+"******Automation_Execution_Result******\\n"+ SlackReporter.returnLongOP()+"}");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        SlackReporter.sendMessageToSlack(context);
         if(extent!=null){
             extent.flush();
         }

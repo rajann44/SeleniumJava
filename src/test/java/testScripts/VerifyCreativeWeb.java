@@ -14,7 +14,7 @@ public class VerifyCreativeWeb {
     @Test(priority = 1)
     public void navigation_03(){
         signupPage.navigateToTheURL("https://www.sony.com/");
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
     }
 
     @Test(priority = 2)
@@ -24,9 +24,9 @@ public class VerifyCreativeWeb {
     }
 
     @Test(priority = 3)
-    public void navigation_08_Fail2(){
+    public void navigation_08(){
         signupPage.navigateToTheURL("https://google.com/");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 
 }
