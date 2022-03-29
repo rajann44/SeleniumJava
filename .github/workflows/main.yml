@@ -46,6 +46,7 @@ jobs:
       with:
         branch: gh-pages
         folder: ./reports
+      if: always()
     
     - uses: act10ns/slack@v1.5.0
       with:
