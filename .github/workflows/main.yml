@@ -56,7 +56,7 @@ jobs:
       with:
         token: ${{ secrets.SLACK_TOKEN }}
         path: ./reports/index.html
-        channel: random
+        channel: '#selenium_java_notification'
       if: always()
         
     - uses: act10ns/slack@v1.5.0
