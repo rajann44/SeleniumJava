@@ -47,7 +47,17 @@ jobs:
         branch: gh-pages
         folder: ./reports
       if: always()
-    
+      
+    - name: Checkout
+      uses: actions/checkout@v2 # Checkout the code
+    - run: echo "Test file " > ./reports/index.html
+    - name: Upload to slack step
+      uses: adrey/slack-file-upload-action@master
+      with:
+        token: ${{ secrets.SLACK_TOKEN }}
+        path: test.txt
+        channel: random
+        
     - uses: act10ns/slack@v1.5.0
       with:
         status: ${{ job.status }}
