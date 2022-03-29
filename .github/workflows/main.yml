@@ -55,7 +55,7 @@ jobs:
       uses: adrey/slack-file-upload-action@master
       with:
         token: ${{ secrets.SLACK_TOKEN }}
-        path: test.txt
+        path: ./reports/index.html
         channel: random
       if: always()
         
