@@ -372,3 +372,5 @@
 - Implement ExtentReports for better reporting
 - Add WebDriverManager for browser management
 - Implement Page Object Model
+
+# Test commit - do not remove
